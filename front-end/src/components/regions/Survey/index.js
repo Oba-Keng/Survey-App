@@ -167,7 +167,7 @@ const Survey = () => {
               <th></th>
               <th>
                 Strongly Agree<br></br> (1)
-              </th>{" "}
+              </th>
               <th>
                 Agree<br></br>(2)
               </th>
@@ -186,77 +186,74 @@ const Survey = () => {
             <tr>
               <td>I like to eat out</td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="out" />
               </td>
               <td>
                 {" "}
-                <input type="radio" name="other" />
+                <input type="radio" name="out" />
               </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="out" />
               </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="out" />
               </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="out" />
               </td>
             </tr>
             <tr>
               <td>I like to watch movies </td>
               <td>
-                {" "}
-                <input type="radio" name="other" />
+                <input type="radio" name="movie" />
               </td>
               <td>
-                {" "}
-                <input type="radio" name="other" />
+                <input type="radio" name="movie" />
               </td>
               <td>
-                {" "}
-                <input type="radio" name="other" />
+                <input type="radio" name="movie" />
               </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="movie" />
               </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="movie" />
               </td>
             </tr>
             <tr>
               <td>I like to watch TV</td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="TV" />
               </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="TV" />
               </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="TV" />
               </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="TV" />
               </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="TV" />
               </td>
             </tr>
             <tr>
               <td>I like to listen to the radio </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="listen_radio" />
               </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="listen_radio" />
               </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="listen_radio" />
               </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="listen_radio" />
               </td>
               <td>
-                <input type="radio" name="other" />
+                <input type="radio" name="listen_radio" />
               </td>
             </tr>
           </tbody>
