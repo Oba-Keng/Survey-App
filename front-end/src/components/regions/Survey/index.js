@@ -11,7 +11,7 @@ const Survey = () => {
     age: null,
 
     food: [
-      "pizza pasta",
+      "pizza",
       "pasta",
       "Pap and Wors",
       "Chicken stir fry",

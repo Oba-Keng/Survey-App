@@ -6,7 +6,14 @@ const postSchema = mongoose.Schema({
   contactNumber: Number,
   date: Date,
   age: Number,
-  food: []
+  food: [
+    "pizza",
+    "pasta",
+    "Pap and Wors",
+    "Chicken stir fry",
+    "Beef stir fry",
+    "Other"
+  ]
 });
 
 const PostMessage = mongoose.model("PostMessage", postSchema);
