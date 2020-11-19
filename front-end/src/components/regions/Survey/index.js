@@ -8,7 +8,7 @@ const Survey = () => {
     firstNames: "",
     contactNumber: null,
     date: "",
-    age: null,
+    age: [],
 
     food: [
       "pizza",

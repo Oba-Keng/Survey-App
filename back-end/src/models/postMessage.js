@@ -5,7 +5,7 @@ const postSchema = mongoose.Schema({
   firstNames: String,
   contactNumber: Number,
   date: Date,
-  age: Number,
+  age: [],
   food: [
     "pizza",
     "pasta",
