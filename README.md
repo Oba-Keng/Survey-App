@@ -10,6 +10,6 @@ npm install express.js,node,react
 
 ### Cd into front-end run npm start to run React front end
 
-###Back-end dependencies
+### Back-end dependencies
 
 npm install axios redux redux-thunk
