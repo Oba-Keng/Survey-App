@@ -2,6 +2,8 @@
 
 ## Developed with Mern Stack(MongoDB,Express,React,Node)
 
-### cd into back run npm start to run server on localhost
+npm install express.js,node,react
 
-### cd into front end run npm start to run React front end
+### Cd into back-end run npm start to run server on localhost
+
+### Cd into front-end run npm start to run React front end
