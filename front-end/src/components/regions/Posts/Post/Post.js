@@ -1,25 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Post = ({ post }) => {
-  const [arraySum,setSum] = (0);
+  const [arraySum, setSum] = useState(0);
 
-  const ArrayTotal = post.age.map(posts =>{
+  //  const averageAray = [];
+  //  post.age.forEach(
 
-    Math.max.apply( posts);
-    return (
-      <div>{posts}</div>
-    )
+  //  )
+  //  .push(<div>
+  //    setSum(
 
+  //    )
 
+  //  </div>)
 
-    })
-    // return
-  }
   return (
     <div>
-      {ArrayTotal()}
-
-      {/* <div>{post.surname}</div>
+      {post.age}
+      <div>{post.surname}</div>
       Average age:
       <div>{post.firstNames}</div>
       Oldest person who participated in survey
@@ -30,7 +28,7 @@ const Post = ({ post }) => {
       <div>{post.age}</div>
       Percentage of people who like Pasta: Percentage of people who like Pap and
       Wors: People like to eat out: People like to watch movies: People like to
-      watch TV: People like to listen to the radio: */}
+      watch TV: People like to listen to the radio:
     </div>
   );
 };
