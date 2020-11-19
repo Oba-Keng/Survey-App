@@ -17,7 +17,18 @@ const Survey = () => {
       "Chicken stir fry",
       "Beef stir fry",
       "Other"
-    ]
+    ],
+
+    eat: ["stronglyAgree", "Agree", "Neutral", "Disagree", "stronglyDisagree"],
+    movies: [
+      "stronglyAgree",
+      "Agree",
+      "Neutral",
+      "Disagree",
+      "stronglyDisagree"
+    ],
+    tv: ["stronglyAgree", "Agree", "Neutral", "Disagree", "stronglyDisagree"],
+    radio: ["stronglyAgree", "Agree", "Neutral", "Disagree", "stronglyDisagree"]
   });
 
   //allows us to dispatch actions
@@ -26,18 +37,6 @@ const Survey = () => {
   const handleSubmit = () => {
     dispatch(createPost(postData));
   };
-
-  // const handleInputChange = event => {
-  //   dispatch(createPost(postData));
-
-  //   const target = event.target;
-  //   const value = target.type === "checkbox" ? target.checked : target.value;
-  //   const name = target.name;
-
-  //   setPostData({
-  //     [name]: value
-  //   });
-  // };
 
   return (
     <div className="App">
@@ -111,10 +110,10 @@ const Survey = () => {
           <p>
             <input
               type="checkbox"
-              value={postData.food[0 + 1]}
+              value={postData.food[1]}
               name="pasta"
               onChange={e => setPostData({ ...postData, food: e.target.value })}
-            />{" "}
+            />
             Pasta
           </p>
           <p>
@@ -131,9 +130,7 @@ const Survey = () => {
               type="checkbox"
               value={postData.food[3]}
               name="Chicken stir fry"
-              onChange={e =>
-                setPostData({ ...postData, firstNames: e.target.value })
-              }
+              onChange={e => setPostData({ ...postData, food: e.target.value })}
             />{" "}
             Chicken stir fry
           </p>
@@ -186,74 +183,213 @@ const Survey = () => {
             <tr>
               <td>I like to eat out</td>
               <td>
-                <input type="radio" name="out" />
+                <input
+                  type="radio"
+                  value={postData.eat[0]}
+                  name="eatOut"
+                  onChange={e =>
+                    setPostData({ ...postData, eat: e.target.value })
+                  }
+                />
               </td>
               <td>
-                {" "}
-                <input type="radio" name="out" />
+                <input
+                  type="radio"
+                  value={postData.eat[1]}
+                  name="eatOut"
+                  onChange={e =>
+                    setPostData({ ...postData, eat: e.target.value })
+                  }
+                />
               </td>
               <td>
-                <input type="radio" name="out" />
+                <input
+                  type="radio"
+                  value={postData.eat[2]}
+                  name="eatOut"
+                  onChange={e =>
+                    setPostData({ ...postData, eat: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="out" />
+                <input
+                  type="radio"
+                  value={postData.eat[3]}
+                  name="eatOut"
+                  onChange={e =>
+                    setPostData({ ...postData, eat: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="out" />
+                <input
+                  type="radio"
+                  value={postData.eat[4]}
+                  name="eatOut"
+                  onChange={e =>
+                    setPostData({ ...postData, eat: e.target.value })
+                  }
+                />{" "}
               </td>
             </tr>
             <tr>
               <td>I like to watch movies </td>
               <td>
-                <input type="radio" name="movie" />
+                <input
+                  type="radio"
+                  value={postData.movies[0]}
+                  name="movie"
+                  onChange={e =>
+                    setPostData({ ...postData, movies: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="movie" />
+                <input
+                  type="radio"
+                  value={postData.movies[1]}
+                  name="movie"
+                  onChange={e =>
+                    setPostData({ ...postData, movies: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="movie" />
+                <input
+                  type="radio"
+                  value={postData.movies[2]}
+                  name="movie"
+                  onChange={e =>
+                    setPostData({ ...postData, movies: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="movie" />
+                <input
+                  type="radio"
+                  value={postData.movies[3]}
+                  name="movie"
+                  onChange={e =>
+                    setPostData({ ...postData, movies: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="movie" />
+                <input
+                  type="radio"
+                  value={postData.movies[4]}
+                  name="movie"
+                  onChange={e =>
+                    setPostData({ ...postData, movies: e.target.value })
+                  }
+                />
               </td>
             </tr>
             <tr>
               <td>I like to watch TV</td>
               <td>
-                <input type="radio" name="TV" />
+                <input
+                  type="radio"
+                  value={postData.tv[0]}
+                  name="tv"
+                  onChange={e =>
+                    setPostData({ ...postData, tv: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="TV" />
+                <input
+                  type="radio"
+                  value={postData.tv[1]}
+                  name="tv"
+                  onChange={e =>
+                    setPostData({ ...postData, tv: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="TV" />
+                <input
+                  type="radio"
+                  value={postData.tv[2]}
+                  name="tv"
+                  onChange={e =>
+                    setPostData({ ...postData, tv: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="TV" />
+                <input
+                  type="radio"
+                  value={postData.tv[3]}
+                  name="tv"
+                  onChange={e =>
+                    setPostData({ ...postData, tv: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="TV" />
+                <input
+                  type="radio"
+                  value={postData.tv[4]}
+                  name="tv"
+                  onChange={e =>
+                    setPostData({ ...postData, tv: e.target.value })
+                  }
+                />{" "}
               </td>
             </tr>
             <tr>
               <td>I like to listen to the radio </td>
               <td>
-                <input type="radio" name="listen_radio" />
+                <input
+                  type="radio"
+                  value={postData.radio[0]}
+                  name="radio"
+                  onChange={e =>
+                    setPostData({ ...postData, radio: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="listen_radio" />
+                <input
+                  type="radio"
+                  value={postData.radio[1]}
+                  name="radio"
+                  onChange={e =>
+                    setPostData({ ...postData, radio: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="listen_radio" />
+                <input
+                  type="radio"
+                  value={postData.radio[2]}
+                  name="radio"
+                  onChange={e =>
+                    setPostData({ ...postData, radio: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="listen_radio" />
+                <input
+                  type="radio"
+                  value={postData.radio[3]}
+                  name="radio"
+                  onChange={e =>
+                    setPostData({ ...postData, radio: e.target.value })
+                  }
+                />{" "}
               </td>
               <td>
-                <input type="radio" name="listen_radio" />
+                <input
+                  type="radio"
+                  value={postData.radio[4]}
+                  name="radio"
+                  onChange={e =>
+                    setPostData({ ...postData, radio: e.target.value })
+                  }
+                />{" "}
               </td>
             </tr>
           </tbody>

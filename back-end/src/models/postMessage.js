@@ -13,7 +13,12 @@ const postSchema = mongoose.Schema({
     "Chicken stir fry",
     "Beef stir fry",
     "Other"
-  ]
+  ],
+
+  eat: ["stronglyAgree", "Agree", "Neutral", "Disagree", "stronglyDisagree"],
+  movies: ["stronglyAgree", "Agree", "Neutral", "Disagree", "stronglyDisagree"],
+  tv: ["stronglyAgree", "Agree", "Neutral", "Disagree", "stronglyDisagree"],
+  radio: ["stronglyAgree", "Agree", "Neutral", "Disagree", "stronglyDisagree"]
 });
 
 const PostMessage = mongoose.model("PostMessage", postSchema);

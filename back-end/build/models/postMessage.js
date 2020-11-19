@@ -8,10 +8,16 @@ var postSchema = mongoose.Schema({
   contactNumber: String,
   date: Date,
   Age: Number,
-  food: {
-    type: String,
-    possibleValues: ["Pizza", "Pasta", "Pap and Wors", "Chicken stir fry", "Beef stir fry", "Other"]
-  }
+  food: [
+    "Pizza",
+    "Pasta",
+    "Pap and Wors",
+    "Chicken stir fry",
+    "Beef stir fry",
+    "Other"
+  ],
+  eat: ["stronglyAgree", "Agree", "Neutral", "Disagree", "stronglyDisagree"],
+  movies: ["wow", "Agree", "Neutral", "Disagree", "stronglyDisagree"]
 });
 
 var PostMessage = mongoose.model("PostMessage", postSchema);
